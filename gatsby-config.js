@@ -4,25 +4,35 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Adam Drake - Web Developer Portfolio`
+    siteTitleAlt: `Adam Drake - Web Developer Portfolio`,
+    siteTitle: `Adam Drake`,
+    siteTitleAlt: `Adam Drake - Web Developer Portfolio`,
+    siteHeadline: `Adam Drake - Web Developer Portfolio`,
+    siteUrl: `https://adamdrake.cz`,
+    siteDescription: `Web Developer Portfolio for Adam Drake`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `@lekoarts_de`
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
-      options: {}
+      options: {
+        basepath: `/blog`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID
+        trackingId: 'UA-50260984-1'
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Adam Drake - Web Developer`,
+        short_name: `Adam Drake - Web Developer`,
+        description: `Web Developer Portfolio for Adam Drake`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
