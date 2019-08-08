@@ -9,17 +9,12 @@ module.exports = {
     siteTitleAlt: `Adam Drake - Web Developer Portfolio`,
     siteHeadline: `Adam Drake - Web Developer Portfolio`,
     siteUrl: `https://adamdrake.cz`,
-    siteDescription: `Web Developer Portfolio for Adam Drake`,
-    siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`
+    siteDescription: `Web Developer Portfolio for Adam Drake`
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
-      options: {
-        basepath: `/blog`
-      }
+      options: {}
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
